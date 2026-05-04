@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ "$#" -lt 1 ]; then
+  echo "Usage:"
+  echo "  ./BBOP <SUBJECT>"
+  echo "  ./BBOP --check"
+  echo
+  echo "Examples:"
+  echo "  ./BBOP sub-TUSMR14"
+  echo "  ./BBOP --check"
+  exit 1
+fi
+
+if [ "$1" = "--check" ]; then
+  BBOP_MODE="check"
+  SUB=""
+else
+  BBOP_MODE="run"
+  SUB="$1"
+fi
+
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONFIG="$BASE_DIR/BBOP_config.sh"
+
+if [ ! -f "$CONFIG" ]; then
+  echo "ERROR: BBOP_config.sh not found in:"
+  echo "$BASE_DIR"
+  exit 1
+fi
+
+source "$CONFIG"
+export BASE_DIR
+
+source "$BASE_DIR/Scripts/BBOP_Pipeline/BBOP_setup.sh"
+
+if [ -n "${BBOP_VENV:-}" ] && [ -f "$BBOP_VENV" ]; then
+  source "$BBOP_VENV"
+else
+  echo "Warning: BBOP virtual environment not found or not set:"
+  echo "${BBOP_VENV:-unset}"
+fi
+
+if [ "$BBOP_MODE" = "check" ]; then
+  "$PIPE/BBOP_check_environment.sh"
+  exit $?
+fi
+
+"$PIPE/BBOP_pipeline_preproc_RUN-command.sh" \
+  "$BASE_DIR" \
+  "$SUB" \
+  "${ROIS[@]}" \
+  "${BBOP_FLAGS[@]}"

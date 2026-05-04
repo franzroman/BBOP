@@ -1,0 +1,31 @@
+# BBOP_ROIs.yaml
+# Central catalogue of TUS targets for the TUSMR2025 project.
+# Coordinates are in MNI152 1mm space (RAS orientation).
+
+metadata:
+  atlas_name: "MNI152 1mm (FSL)"
+  atlas_reference: "FSL MNI152_T1_1mm"
+  coordinate_space: "MNI152_1mm"
+  mask_root_relative: "Raw-Data/Pipeline/Masks"
+  notes: >
+    This ROI catalogue defines conceptual TUS targets for TUSMR2025.
+    Coordinates are in MNI152 1mm space. Masks are stored as NIfTI files
+    under Raw-Data/Pipeline/Masks.
+
+rois:
+  caudate_da_rh:
+    label: "dorsal anterior caudate nucleus (right)"
+    mni_coords: [13.56522, 21.0, 5.620997]
+    mask_file: "roi_caudate_da_rh_1mm.nii.gz"
+    description: >
+      Dorsal anterior caudate nucleus, right hemisphere.
+      Dopamine-associated region (caudate_da).
+
+  mfg5_internal_v3:
+    label: "MFG5 internal v3 (dlPFC)"
+    mni_coords: [42.70253, 35.22161, 19.54793]
+    mask_file: "roi_mfg5_FSL6sym_1mm_mask_v3.nii.gz"
+    description: >
+      Internal parcel of the middle frontal gyrus (MFG5), version 3,
+      from Bruno et al. 2024 (dlPFC subparcellation).
+

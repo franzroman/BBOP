@@ -1,0 +1,114 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2066" dy="1210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-23" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-39" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-20" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-20" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;horizontal=0;fontStyle=1" value="Simulation Planning" vertex="1">
+          <mxGeometry height="220" width="210" x="80" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-38" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-16" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-16" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;horizontal=0;fontStyle=1" value="Coreg QC" vertex="1">
+          <mxGeometry height="100" width="210" x="80" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-37" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-15" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-15" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;horizontal=0;fontStyle=1" value="Target Definition" vertex="1">
+          <mxGeometry height="100" width="210" x="80" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-36" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-10" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;horizontal=0;verticalAlign=top;fontStyle=1" value="Head Model Generation" vertex="1">
+          <mxGeometry height="100" width="210" x="80" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-35" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-6" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;horizontal=0;verticalAlign=top;spacingLeft=0;spacingBottom=0;spacingRight=0;fontStyle=1" value="MRI Preprocessing" vertex="1">
+          <mxGeometry height="340" width="210" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 1&lt;div&gt;&lt;div&gt;DICOM → NifTI preparation&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-4" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 2&amp;nbsp;&lt;div&gt;Subject data organization&lt;br&gt;&amp;amp; NIfTI staging&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-9" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 3&lt;br&gt;1 mm isotropic resampling" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-7" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 4&lt;br&gt;SimNIBS CHARM" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-14" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-11" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 5&lt;br&gt;ROI targeting" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-18" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-25" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HVi_0dQcPSTtkjVWcyo2-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="770" />
+              <mxPoint x="300" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-12" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 6&lt;br&gt;T1–T2 QC" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-21" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="HVi_0dQcPSTtkjVWcyo2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HVi_0dQcPSTtkjVWcyo2-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-17" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 7 (opt)&lt;br&gt;PETRA → pseudo-CT&lt;div&gt;PetraToCT Toolbox&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-19" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Step 8 (opt)&lt;br&gt;TUS-entry optimization&lt;div&gt;TUS-entry Toolbox&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-22" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;fontSize=16;fontStyle=1" value="Outputs ready for Babelbrain" vertex="1">
+          <mxGeometry height="80" width="210" x="80" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-26" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;horizontal=1;verticalAlign=top;spacingLeft=0;spacingBottom=0;spacingRight=10;fontStyle=0" value="&lt;ul&gt;&lt;li&gt;Step 1: Converts raw MRI data from scanner DICOM format to standardized NIfTI files and initializes the subject analysis directory.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Step 2: Identifies anatomical scans (T1, T2, PETRA), standardizes filenames, and organizes them into the pipeline’s subject-level analysis structure.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Step 3: Resamples anatomical images to a uniform &lt;span data-start=&quot;846&quot; data-end=&quot;875&quot;&gt;1 mm isotropic resolution&lt;/span&gt; to ensure compatibility with downstream modeling tools.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="270" x="320" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-27" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;horizontal=1;verticalAlign=top;spacingLeft=0;spacingBottom=0;spacingRight=10;fontStyle=0" value="&lt;ul&gt;&lt;li&gt;Step 4: Runs &lt;span data-start=&quot;988&quot; data-end=&quot;1005&quot;&gt;SimNIBS CHARM&lt;/span&gt; to generate an individualized head model including tissue segmentations and anatomical reference volumes.&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="100" width="270" x="320" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-28" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;horizontal=1;verticalAlign=top;spacingLeft=0;spacingBottom=0;spacingRight=10;fontStyle=0" value="&lt;ul&gt;&lt;li&gt;Step 5: Generates subject-specific target masks from predefined MNI coordinates or masks using inverse normalization.&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="100" width="270" x="320" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-29" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;horizontal=1;verticalAlign=top;spacingLeft=0;spacingBottom=0;spacingRight=10;fontStyle=0" value="&lt;ul&gt;&lt;li&gt;Step 6: Evaluates T1–T2 alignment (if T2 used) by computing difference images and summary statistics for visual and quantitative QC&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="100" width="270" x="320" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="HVi_0dQcPSTtkjVWcyo2-30" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;horizontal=1;verticalAlign=top;spacingLeft=0;spacingBottom=0;spacingRight=10;fontStyle=0" value="&lt;ul&gt;&lt;li&gt;Step 7: Converts PETRA into a &lt;span data-start=&quot;1507&quot; data-end=&quot;1520&quot; style=&quot;&quot;&gt;pseudo-CT using UCL&#39;s petra-to-ct toolbox.&amp;nbsp;&lt;/span&gt;&amp;nbsp;to improve skull modeling for ultrasound propagation simulations.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Step 8: Computes optimal ultrasound transducer entry points on the scalp for each target region using geometric and distance constraints using the TUS-entry toolbox by Atkinson-Clement &amp;amp; Kaiser&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="270" x="320" y="830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

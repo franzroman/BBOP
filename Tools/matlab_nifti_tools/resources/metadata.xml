@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addOn>
+  <identifier>e54e43bf-4a80-11e4-9553-005056977bd0</identifier>
+  <displayType>Collection</displayType>
+  <translatedDisplayType>
+    <en_US>Collection</en_US>
+    <ja_JP>コレクション</ja_JP>
+    <ko_KR>컬렉션</ko_KR>
+    <zh_CN>集合</zh_CN>
+  </translatedDisplayType>
+  <name>Tools for NIfTI and ANALYZE image</name>
+  <author>Jimmy Shen</author>
+  <version>1.27.0.0</version>
+  <downloadUrl>https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/8797/versions/28/download/zip?src=addons_ml_desktop_install&amp;profile_id=29829601&amp;license=41119113&amp;release_family=R2025b</downloadUrl>
+  <licenseUrl>https://addons.mathworks.com/registry/v1/e54e43bf-4a80-11e4-9553-005056977bd0/1.27.0.0/-/license</licenseUrl>
+  <previewImageUrl>https://www.mathworks.com/responsive_image/160/120/0/0/0/cache/matlabcentral/mlc-downloads/downloads/submissions/8797/versions/28/screenshot.jpg</previewImageUrl>
+  <releaseNotesUrl>https://www.mathworks.com/add-ons/e54e43bf-4a80-11e4-9553-005056977bd0/8df299db-7cd1-c039-defe-718748810857/releaseNotes</releaseNotesUrl>
+  <installationFolder>Collections</installationFolder>
+</addOn>

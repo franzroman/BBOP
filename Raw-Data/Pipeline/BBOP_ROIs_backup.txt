@@ -1,0 +1,90 @@
+# BBOP_ROIs.yaml
+# Central catalogue of TUS targets for use in BBOP pipeline.
+# Coordinates are in MNI152 1mm space (RAS orientation).
+
+metadata:
+  atlas_name: "MNI152 1mm (FSL)"
+  atlas_reference: "FSL MNI152_T1_1mm"
+  coordinate_space: "MNI152_1mm"
+  mask_root_relative: "Raw-Data/Pipeline/Masks"
+  notes: >
+    This ROI catalogue defines conceptual TUS targets for use in BBOP pipeline.
+    Coordinates are in MNI152 1mm space. Masks are stored as NIfTI files
+    under Raw-Data/Pipeline/Masks.
+
+rois:
+  caudate_da_rh:
+    label: "dorsal anterior caudate nucleus (right)"
+    mni_coords: [13.56522, 21.0, 5.620997]
+    mask_file: "roi_caudate_da_rh_1mm.nii.gz"
+    description: >
+      Dorsal anterior caudate nucleus, right hemisphere.
+      Dopamine-associated region (caudate_da).
+
+  mfg5_internal_v3:
+    label: "MFG5 internal v3 (dlPFC)"
+    mni_coords: [42.70253, 35.22161, 19.54793]
+    mask_file: "roi_mfg5_FSL6sym_1mm_mask_v3.nii.gz"
+    description: >
+      Internal parcel of the middle frontal gyrus (MFG5), version 3,
+      from Bruno et al. 2024 (dlPFC subparcellation).
+
+  pcc_lh_1:
+    label: "PCC left 1"
+    mni_coords: [-4, -50, 26]
+    mask_file: "roi_pcc_lh_1_MNI1521mm.nii.gz"
+    description: >
+      Posterior inferior point in left PCC. Specified for UoP NODDI pilot project.
+
+  pcc_lh_2:
+    label: "PCC left 2"
+    mni_coords: [-4, -45, 28]
+    mask_file: "roi_pcc_lh_2_MNI1521mm.nii.gz"
+    description: >
+      Posterior inferior point in left PCC. Specified for UoP NODDI pilot project.
+      Anterior and slightly superior to "PCC left 1", posterior to "PCC left 3" 
+  
+  pcc_lh_3:
+    label: "PCC left 3"
+    mni_coords: [-4, -42, 27.6]
+    mask_file: "roi_pcc_lh_3_MNI1521mm.nii.gz"
+    description: >
+      Posterior inferior point in left PCC. Specified for UoP NODDI pilot project.
+      Anterior to "PCC left 2"
+
+  pcc_rh_1:
+    label: "PCC right 1"
+    mni_coords: [4, -50, 26]
+    mask_file: "roi_pcc_rh_1_MNI1521mm.nii.gz"
+    description: >
+      Posterior inferior point in right PCC. Specified for UoP NODDI pilot project.
+
+  pcc_rh_2:
+    label: "PCC right 2"
+    mni_coords: [5, -45, 33]
+    mask_file: "roi_pcc_rh_2_MNI1521mm.nii.gz"
+    description: >
+      Posterior inferior point in right PCC. Specified for UoP NODDI pilot project.
+      Anterior and superior to "PCC right 1", posterior and superior to "PCC left 3"
+
+  pcc_rh_3:
+    label: "PCC right 3"
+    mni_coords: [4, -42, 28.7]
+    mask_file: "roi_pcc_rh_3_MNI1521mm.nii.gz"
+    description: >
+      Posterior inferior point in right PCC. Specified for UoP NODDI pilot project.
+      Anterior and inferior to "PCC right 2"
+      
+  nacc_rh:
+    label: "NAcc right"
+    mni_coords: [8.9, 12, -6.8]
+    mask_file: "roi_nacc_rh_MNI1521mm.nii.gz"
+    description: >
+      asdf
+      
+  nacc_lh:
+    label: "NAcc left"
+    mni_coords: [-9.5, 12, -7.5]
+    mask_file: "roi_nacc_lh_MNI1521mm.nii.gz"
+    description: >
+      asdf

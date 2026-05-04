@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addonCore>
+  <label>Tools for NIfTI and ANALYZE image</label>
+  <version>1.27.0.0</version>
+  <type>zip</type>
+  <identifier>e54e43bf-4a80-11e4-9553-005056977bd0</identifier>
+  <createdBy name="Jimmy Shen"/>
+  <image>resources/screenshot.png</image>
+</addonCore>

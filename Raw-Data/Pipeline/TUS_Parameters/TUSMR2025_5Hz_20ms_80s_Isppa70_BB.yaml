@@ -1,0 +1,11 @@
+BaseIsppa:70.0  # W/cm2
+Provenance:
+  BaseIsppa_from: Isppa = Ispta/DC
+  Ispta_W_per_cm2: 7.0
+  DC: 0.1
+
+AllDC_PRF_Duration:
+  - DC: 0.1
+    PRF: 5.0
+    Duration: 80.0
+    DurationOff: 0.0

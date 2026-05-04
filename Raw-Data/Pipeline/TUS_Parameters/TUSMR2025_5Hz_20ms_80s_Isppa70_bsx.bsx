@@ -1,0 +1,22 @@
+[Acoustic Output Controls]
+Pressure Controlled = FALSE
+Pr.0 (MPa) = 0.000000
+Ispta.0 (mW/cm^2) = 7000.000000
+Skull Thickness (mm) = 0.000000
+
+[Pulse Controls]
+Pulse Width (ms) = 20.000000
+PRF (Hz) = 5.000000
+
+[Sonication Controls]
+Sonication Duration (s) = 80.000000
+Sonication Number = 1.000000
+Time Between Sonications (s) = 0.000000
+
+[MRI/EEG Controls]
+MRI Sync Enable = FALSE
+MRI Sync Delay = 200.000000
+Sonication Indicator Enable = TRUE
+Trigger Source = 1
+Edge = FALSE
+Retrigger = FALSE
