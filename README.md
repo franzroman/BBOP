@@ -70,6 +70,8 @@ No global installation required (except dependencies).
 
 # 🔬 Pipeline Overview
 
+![BBOP Flowchart](BBOP_v0-6-1_flowchart.svg)
+
 ## Inputs
 - T1 MRI (required)
 - T2 MRI (optional)
