@@ -74,6 +74,7 @@ No global installation required (except dependencies).
 - T1 MRI (required)
 - T2 MRI (optional)
 - PETRA MRI (optional)
+- ZTE MRI (optional)
 - ROI definitions (YAML)
 
 ## Outputs
@@ -117,7 +118,7 @@ QC (T1–T2)
 - Initializes subject structure
 
 ## Step 2 — Canonical anatomy
-- Identifies T1/T2/PETRA
+- Identifies T1/T2/PETRA/ZTE
 - Standardizes filenames
 
 ## Step 3 — Resampling
