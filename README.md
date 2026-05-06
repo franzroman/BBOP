@@ -1,4 +1,4 @@
-# BBOP Preprocessing Pipeline (v0.6.0 – Extended)
+# BBOP Preprocessing Pipeline (v0.6.1 – Extended)
 
 BBOP (**BabelBrain and Brainsight-Oriented Preprocessing**) is a modular, reproducible preprocessing pipeline designed for **transcranial ultrasound (TUS)** workflows.
 
@@ -260,7 +260,7 @@ for manual step execution and troubleshooting.
 
 # 📦 Version
 
-BBOP v0.6.0
+BBOP v0.6.1
 
 
 ---
