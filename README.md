@@ -351,3 +351,7 @@ ZTE support extends BBOP beyond PETRA-only skull imaging and prepares the pipeli
 - ZTE-based pseudo-CT workflows  
 - Improved compatibility with external datasets  
 - Future modality-agnostic preprocessing
+
+## Acknowledgements and Contributions
+
+The trajectory file export functionality of Step 8 is an extension of the TUS_entry toolbox developed by Cyril Atkinson-Clement.
