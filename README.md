@@ -9,13 +9,79 @@ It integrates MRI preprocessing, head modeling, ROI targeting, and optional acou
 # 🚀 Quick Start
 
 ```bash
-git clone <repo> MyStudy_BBOP
+git clone https://github.com/franzroman/BBOP.git MyStudy_BBOP
 cd MyStudy_BBOP
 nano BBOP_config.sh
+./BBOP --check
 ./BBOP sub-XXX
 ```
 
+- Replace `MyStudy_BBOP` with your project/study name.
+
+- 💡 Run `./BBOP --check` to verify your environment before processing data.
+
+- Replace "sub-XXX" with your subject ID (e.g., sub-01).
+
+- Edit `BBOP_config.sh`. This can be done with any text editor (e.g., VS Code).
+
 **That is the entire user workflow.**
+
+---
+
+## 📘 Full Walkthrough
+
+For a detailed step-by-step guide, see:
+
+[BBOP Walkthrough](docs/getting_started.md)
+
+## ⏱ Runtime
+
+The following runtimes are representative example runs and may vary substantially across systems and datasets.
+
+### Example Runtime 1 — NIfTI input (T1 + T2)
+
+Subject: `sub-Chen01-7T`  
+Input: T1 and T2 (NIfTI)  
+System: Apple Mac M4 Pro (48 GB RAM)
+
+| Step | Description              | Runtime |
+|------|--------------------------|--------|
+| 1    | DICOM → NIfTI prep       | ~0 s   |
+| 2    | Canonical anatomy        | ~0 s   |
+| 3    | Resampling (1 mm)        | ~4 s   |
+| 4    | SimNIBS (CHARM)          | ~29 min |
+| 5    | Targeting                | ~11 s  |
+| 6    | QC                       | ~2 s   |
+| 7    | pCT (optional)           | skipped |
+| 8    | TUS-entry                | ~2 min 45 s |
+
+**Total runtime:** ~32 minutes  
+
+---
+
+### Example Runtime 2 — DICOM input (T1 + T2 + PETRA)
+
+Subject: `sub-KC_PILOT`  
+Input: T1, T2, and PETRA (DICOM)
+
+| Step | Description              | Runtime |
+|------|--------------------------|--------|
+| 1    | DICOM → NIfTI prep       | ~0 s   |
+| 2    | Canonical anatomy        | ~1 s   |
+| 3    | Resampling (1 mm)        | ~2 s   |
+| 4    | SimNIBS (CHARM)          | ~35 min |
+| 5    | Targeting                | ~14 s  |
+| 6    | QC                       | ~3 s   |
+| 7    | pCT (optional)           | skipped |
+| 8    | TUS-entry                | ~12 min 50 s |
+
+**Total runtime:** ~48 minutes  
+
+---
+
+> 💡 SimNIBS (Step 4) is the main computational bottleneck.
+
+> ⚠️ Runtime varies depending on hardware, input modality (NIfTI vs DICOM), and enabled modules.
 
 ---
 
@@ -268,45 +334,70 @@ BBOP v0.6.1
 
 ---
 
-# 📁 Example Subject (ErnieExtended)
+# 📁 Example Datasets
 
-A minimal example subject is included for testing and demonstration:
+BBOP includes representative example datasets for testing and demonstration purposes.
 
-```
-Raw-Data/Subjects/ErnieExtended/ses-01/anat/
-    ErnieExtended_T1.nii.gz
-```
+## Included Data
+
+The example subjects are selected to reflect common use cases in TUS preprocessing workflows:
+
+- **T1 + T2 dataset**  
+  → enables multimodal head model generation and QC
+  → from Chen et al. (2023): https://doi.org/10.1038/s41597-023-02400-y 
+
+- **Preprocessed head model dataset (SimNIBS)**  
+  → demonstrates compatibility with existing simulation environments
+  → from Lepping et al. (2016): https://doi.org/10.1177/0305735615604509 via SimNIBS Group Dataset
+
+These datasets are minimally adapted to match the BBOP directory structure and naming conventions.
+
+---
 
 ## Purpose
 
+The example datasets are provided to:
+
 - Allow immediate testing after cloning  
 - Validate pipeline structure and execution  
-- Demonstrate behavior with minimal input  
+- Demonstrate behavior across different data scenarios  
+- Facilitate reproducible onboarding  
+
+---
 
 ## Notes
 
-- This is a **T1-only dataset**  
-- Not intended for full simulation workflows  
-- Optional steps (T2-based QC, pCT) will be skipped  
+- Datasets represent **different levels of preprocessing completeness**  
+- Not all optional steps (e.g., pCT, TUS-entry) will run for all datasets  
+- Some datasets may already contain derived outputs (e.g., head models)  
 
-## Relation to SimNIBS “Ernie Extended”
+---
 
-This example is conceptually aligned with the *Ernie Extended* dataset:
+## Relation to External Datasets
 
-- MRI/CT-derived head model  
-- Commonly used for simulation validation  
+The included examples are derived from publicly available datasets used to evaluate BBOP:
 
-References:
-- https://pubmed.ncbi.nlm.nih.gov/40800500/  
-- https://simnibs.github.io/simnibs/build/html/dataset.html  
+- Multimodal MRI dataset (T1 + T2, 3T / 7T)  
+- SimNIBS dataset with precomputed head models  
+
+These datasets were selected to demonstrate BBOP’s robustness across:
+
+1. Minimal structural input (T1-only)  
+2. Multimodal MRI preprocessing  
+3. Integration with preprocessed simulation environments  
+
+---
 
 ## Important Clarification
 
-The public SimNIBS dataset mainly contains **derived head models** (e.g., `m2m_ernie`),  
-not the raw anatomical inputs required for full preprocessing.
+The example datasets are intended for:
 
-Therefore, the included T1 serves as a **minimal structural example**, not a full reconstruction dataset.
+- **testing and demonstration**
+- **workflow validation**
 
+They are **not intended as full experimental datasets** for TUS simulations.
+
+Users should provide their own study-specific data for actual experiments.
 
 ---
 
@@ -352,6 +443,8 @@ ZTE support extends BBOP beyond PETRA-only skull imaging and prepares the pipeli
 - Improved compatibility with external datasets  
 - Future modality-agnostic preprocessing
 
-## Acknowledgements and Contributions
+---
+
+# Acknowledgements and Contributions
 
 The trajectory file export functionality of Step 8 is an extension of the TUS_entry toolbox developed by Cyril Atkinson-Clement.
