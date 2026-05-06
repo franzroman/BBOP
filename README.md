@@ -19,7 +19,7 @@ nano BBOP_config.sh
 
 ---
 
-# ⚠️ What changed in v0.6.0
+# ⚠️ What changed in v0.6.1
 
 ## New execution model
 
