@@ -1,17 +1,49 @@
 cff-version: 1.2.0
-title: "BBOP: BabelBrain Optimized Preprocessing"
-message: "If you use this software, please cite it."
+
+message: "If you use this software, please cite it as below."
+
+title: "BBOP: BabelBrain- and Brainsight-Oriented Preprocessing"
+
 type: software
+
 authors:
-  - family-names: Schmid
-    given-names: Franz Roman
-    affiliation: University of Vienna
-    orcid: https://orcid.org/0000-0002-0116-4096
-  - family-names: Atkinson-Clement
-    given-names: Cyril
-    affiliation: University of Plymouth
-    orcid: https://orcid.org/0000-0001-9499-3485
+  - family-names: "Schmid"
+    given-names: "Franz Roman"
+    affiliation: "University of Vienna"
+    orcid: "https://orcid.org/0000-0002-0116-4096"
+
+  - family-names: "Atkinson-Clement"
+    given-names: "Cyril"
+    affiliation: "University of Plymouth"
+    orcid: "https://orcid.org/0000-0001-9499-3485"
+
+abstract: >
+  BBOP (BabelBrain Optimized Preprocessing) is a preprocessing and
+  targeting pipeline designed to facilitate and standardize
+  BabelBrain-oriented transcranial focused ultrasound (tFUS)
+  workflows. The pipeline integrates MRI preprocessing,
+  SimNIBS-based head modeling, MNI-to-subject targeting,
+  Brainsight-compatible neuronavigation export, and
+  BabelBrain-compatible trajectory generation for ultrasound
+  simulation and targeting applications.
+
+keywords:
+  - transcranial focused ultrasound
+  - tFUS
+  - TUS
+  - BabelBrain
+  - Brainsight
+  - SimNIBS
+  - neuronavigation
+  - MRI preprocessing
+  - ultrasound simulation
+
 repository-code: "https://github.com/franzroman/BBOP"
-version: "v0.6.1"
-date-released: 2026-05-04
-license: MIT
+
+url: "https://github.com/franzroman/BBOP"
+
+license: "MIT"
+
+version: "v0.6.2"
+
+date-released: 2026-05-20
