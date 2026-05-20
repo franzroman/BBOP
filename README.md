@@ -1,4 +1,4 @@
-# BBOP Preprocessing Pipeline (v0.6.1 – Extended)
+# BBOP Preprocessing Pipeline (v0.6.2 – Extended)
 
 BBOP (**BabelBrain and Brainsight-Oriented Preprocessing**) is a modular, reproducible preprocessing pipeline designed for **transcranial ultrasound (TUS)** workflows.
 
@@ -85,7 +85,7 @@ Input: T1, T2, and PETRA (DICOM)
 
 ---
 
-# ⚠️ What changed in v0.6.1
+# ⚠️ What changed in v0.6.2
 
 ## New execution model
 
@@ -136,7 +136,7 @@ No global installation required (except dependencies).
 
 # 🔬 Pipeline Overview
 
-![BBOP Flowchart](BBOP_v0-6-1_flowchart.svg)
+![BBOP Flowchart](BBOP_flowchart.svg)
 
 ## Inputs
 - T1 MRI (required)
@@ -329,7 +329,7 @@ for manual step execution and troubleshooting.
 
 # 📦 Version
 
-BBOP v0.6.1
+BBOP v0.6.2
 
 
 ---
