@@ -1,2 +1,2 @@
 #!/bin/bash
-BBOP_VERSION="0.6.2"
+BBOP_VERSION="0.6.3"
