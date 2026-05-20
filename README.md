@@ -6,6 +6,10 @@ It integrates MRI preprocessing, head modeling, ROI targeting, and optional acou
 
 ---
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20308891.svg)](https://doi.org/10.5281/zenodo.20308891)
+
+---
+
 # 🚀 Quick Start
 
 ```bash
