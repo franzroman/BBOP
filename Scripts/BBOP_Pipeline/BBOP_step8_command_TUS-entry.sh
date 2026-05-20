@@ -80,17 +80,10 @@ done
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 TUS_ENTRY_DIR="${TUSENTRY_DIR_CLI:-${TUS_ENTRY_DIR:-${BASE_DIR}/Tools/TUS_entry}}"
 TUS_ENTRY_R="$TUS_ENTRY_DIR/TUS_entry.R"
-TUS_TRAJECTORY_R="$TUS_ENTRY_DIR/TUS_trajectory.R"
 
 if [ ! -f "$TUS_ENTRY_R" ]; then
   echo "Error: TUS_entry.R not found at:"
   echo "  $TUS_ENTRY_R"
-  exit 1
-fi
-
-if [ ! -f "$TUS_TRAJECTORY_R" ]; then
-  echo "Error: TUS_trajectory.R not found at:"
-  echo "  $TUS_TRAJECTORY_R"
   exit 1
 fi
 
@@ -185,7 +178,6 @@ for ROI in "${ROIS[@]}"; do
 Rscript --vanilla - <<RSCRIPT
 library(oro.nifti)
 source("$TUS_ENTRY_R")
-source("$TUS_TRAJECTORY_R")
 
 DO_TRAJ <- $R_DO_TRAJECTORY
 
@@ -222,11 +214,46 @@ stopifnot(
 
 if (DO_TRAJ) {
 
-  traj_txt <- capture.output(
-    TUS_trajectory(
-      target     = target,
-      transducer = res\$MRI_Final_neuronav
+  normalize <- function(v) v / sqrt(sum(v^2))
+  cross <- function(a, b) {
+    c(
+      a[2]*b[3] - a[3]*b[2],
+      a[3]*b[1] - a[1]*b[3],
+      a[1]*b[2] - a[2]*b[1]
     )
+  }
+
+  target_world <- as.numeric(
+    translateCoordinate(matrix(res\$Target_coordinates, ncol = 1), t1img)
+  )
+
+  trans_world <- as.numeric(
+    translateCoordinate(matrix(res\$Transducer_coordinates, ncol = 1), t1img)
+  )
+
+  toolZ <- normalize(trans_world - target_world)
+
+  world_up <- c(0, 0, 1)
+  if (abs(sum(toolZ * world_up)) > 0.99) {
+    world_up <- c(0, 1, 0)
+  }
+
+  toolX <- normalize(cross(world_up, toolZ))
+  toolY <- cross(toolZ, toolX)
+
+  traj_txt <- paste0(
+    "# Version: 14\n",
+    "# Coordinate system: NIfTI:S:Scanner\n",
+    "# Created by: Brainsight BBOP\n",
+    "# Units: millimetres, degrees, milliseconds, and microvolts\n",
+    "# Encoding: UTF-8\n",
+    "# Notes: Each column is delimited by a tab. Each value within a column is delimited by a semicolon.\n",
+    "# Target Name\tLoc. X\tLoc. Y\tLoc. Z\tm0n0\tm0n1\tm0n2\tm1n0\tm1n1\tm1n2\tm2n0\tm2n1\tm2n2\n",
+    "$ROI", "\t",
+    target_world[1], "\t", target_world[2], "\t", target_world[3], "\t",
+    toolX[1], "\t", toolX[2], "\t", toolX[3], "\t",
+    toolY[1], "\t", toolY[2], "\t", toolY[3], "\t",
+    toolZ[1], "\t", toolZ[2], "\t", toolZ[3]
   )
 
   writeLines(traj_txt, "$OUT_TRAJ")
