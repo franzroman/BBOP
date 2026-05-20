@@ -4,9 +4,11 @@
 
 ---
 
-BBOP (**BabelBrain and Brainsight-Oriented Preprocessing**) is a modular, reproducible preprocessing pipeline designed for **transcranial ultrasound (TUS)** workflows.
+BBOP (**BabelBrain Optimized Preprocessing**) is an open-source preprocessing and targeting pipeline for transcranial focused ultrasound (**tFUS**/**TUS**) research.
 
-It integrates MRI preprocessing, head modeling, ROI targeting, and optional acoustic planning into a single, structured environment.
+It is a modular, reproducible pipeline designed for preprocessing and planning workflows with BabelBrain with optional Brainsight integration.
+
+It integrates MRI preprocessing, SimNIBS head modeling, ROI targeting, and transducer trajectory planning into a single, structured environment.
 
 ---
 
@@ -29,6 +31,16 @@ nano BBOP_config.sh
 - Edit `BBOP_config.sh`. This can be done with any text editor (e.g., VS Code).
 
 **That is the entire user workflow.**
+
+---
+
+# 📖 Citation
+
+If you use BBOP in academic work, please cite:
+
+Schmid FR, Atkinson-Clement C.  
+**BBOP: BabelBrain- and Brainsight-Oriented Preprocessing** (v0.6.3).  
+Zenodo. https://doi.org/10.5281/zenodo.20308891
 
 ---
 
