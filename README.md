@@ -1,6 +1,6 @@
 # BBOP Preprocessing Pipeline (v0.6.3 – Extended)
 
-[![DOI](https://zenodo.org/badge/1038446346.svg)](https://doi.org/10.5281/zenodo.20308891)
+**DOI:** [10.5281/zenodo.20308891](https://doi.org/10.5281/zenodo.20308891)
 
 ---
 
